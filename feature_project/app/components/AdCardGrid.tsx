@@ -62,12 +62,12 @@ function AdCard({ card }: { card: AdCard }) {
       onMouseEnter={() => setHovered(true)}
       onMouseLeave={() => setHovered(false)}
       className="flex w-full overflow-hidden rounded-2xl bg-white transition-all duration-300"
-    style={{
-  boxShadow: hovered
-    ? `0 8px 24px -4px ${card.accent}33`
-    : "0 1px 4px -1px rgba(0,0,0,0.06)",
-  transform: hovered ? "translateY(-3px)" : "translateY(0)",
-}}
+      style={{
+        boxShadow: hovered
+          ? `4px 10px 28px -2px ${card.accent}44`
+          : "3px 6px 16px -2px rgba(0,0,0,0.12)",
+        transform: hovered ? "translateY(-3px)" : "translateY(0)",
+      }}
     >
       {/* Left content */}
       <div className="flex flex-1 flex-col justify-between p-5">
@@ -125,10 +125,9 @@ function AdCard({ card }: { card: AdCard }) {
         <img
           src={card.imageUrl}
           alt={card.imageAlt}
-          className="h-full w-full object-cover transition-transform duration-500 ease-in-out  rounded-2xl "
+          className="h-full w-full object-cover transition-transform duration-500 ease-in-out rounded-2xl"
           style={{ transform: hovered ? "scale(1.07)" : "scale(1)" }}
         />
-      
       </div>
     </div>
   );
