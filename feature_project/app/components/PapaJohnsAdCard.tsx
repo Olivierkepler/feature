@@ -14,7 +14,7 @@ export default function PapaJohnsAdCard({
   description = "Regular Menu Price Order",
   ctaLabel = "SHOP NOW",
   ctaHref = "https://www.papajohns.com",
-  imageUrl = "/pizza.jpg",
+  imageUrl = "/images/how_to_wash_towels.jpg",
   imageAlt = "Papa Johns pizza",
 }: PapaJohnsAdCardProps) {
   return (
