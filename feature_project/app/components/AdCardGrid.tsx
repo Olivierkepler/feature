@@ -21,35 +21,35 @@ const cards: AdCard[] = [
     tag: "REFERRAL",
     tagColor: "#16a34a",
     title: "Give $20, Get $20",
-    description: "Refer a friend to Saskia Cleaning and you both get $20 off your next booking.",
+    description: "Refer a friend and you both get $20 off your next order.",
     ctaLabel: "REFER NOW",
-    ctaHref: "https://saskiaservices.com/#quote",
+    ctaHref: "#",
     imageUrl: "/feature/images/friend_sharing.jpg",
-    imageAlt: "Refer a friend to Saskia Cleaning",
+    imageAlt: "Refer a friend",
     accent: "#16a34a",
   },
   {
     id: 2,
     tag: "LIMITED DEAL",
     tagColor: "#CC0000",
-    title: "$20 Off Deep Clean",
-    description: "Book a deep clean this week and save $20. Serving Massachusetts & Rhode Island.",
-    ctaLabel: "BOOK NOW",
-    ctaHref: "https://saskiaservices.com/#quote",
+    title: "25% Off Menu Price",
+    description: "Use code SAVE25 at checkout on any regular menu order today.",
+    ctaLabel: "ORDER NOW",
+    ctaHref: "#",
     imageUrl: "/feature/images/naturisticstone-kitchen-8941904.png",
-    imageAlt: "Professional deep cleaning service",
+    imageAlt: "25% off deal",
     accent: "#CC0000",
   },
   {
     id: 3,
-    tag: "NEW SERVICE",
+    tag: "NEW",
     tagColor: "#0ea5e9",
-    title: "Airbnb Turnover",
-    description: "Fast, guest-ready turnovers for your short-term rental. Starting at $120.",
-    ctaLabel: "LEARN MORE",
-    ctaHref: "https://saskiaservices.com/#services",
+    title: "Epic Stuffed Crust",
+    description: "Try our new garlic-butter stuffed crust. Available for a limited time.",
+    ctaLabel: "TRY IT",
+    ctaHref: "#",
     imageUrl: "/feature/images/towel-folder.jpg",
-    imageAlt: "Airbnb turnover cleaning service",
+    imageAlt: "Stuffed crust pizza",
     accent: "#0ea5e9",
   },
 ];
@@ -95,8 +95,6 @@ function AdCard({ card }: { card: AdCard }) {
         {/* CTA */}
         <a
           href={card.ctaHref}
-          target="_blank"
-          rel="noopener noreferrer"
           className="mt-4 inline-flex w-fit items-center gap-1.5 text-[11px] font-extrabold uppercase tracking-widest transition-colors duration-150"
           style={{
             color: card.accent,
