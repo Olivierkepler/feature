@@ -4,7 +4,9 @@ import PapaJohnsAdCard from "./components/PapaJohnsAdCard";
 export default function Home() {
   return (
     <div className="flex flex-col ">
-     <PapaJohnsAdCard/>
+    <PapaJohnsAdCard
+        imageUrl="/images/how_to_wash_towels.jpg"  {/* add your pizza image to /public */}
+      />
     </div>
   );
 }
