@@ -96,7 +96,11 @@ function AdCard({ card }: { card: AdCard }) {
         <a
           href={card.ctaHref}
           className="mt-4 inline-flex w-fit items-center gap-1.5 text-[11px] font-extrabold uppercase tracking-widest transition-colors duration-150"
-          style={{ color: card.accent, borderBottom: `2px solid ${card.accent}`, paddingBottom: "1px" }}
+          style={{
+            color: card.accent,
+            borderBottom: `2px solid ${card.accent}`,
+            paddingBottom: "1px",
+          }}
         >
           {card.ctaLabel}
           <svg
@@ -122,7 +126,7 @@ function AdCard({ card }: { card: AdCard }) {
           className="h-full w-full object-cover transition-transform duration-500"
           style={{ transform: hovered ? "scale(1.07)" : "scale(1)" }}
         />
-        {/* Color overlay strip on left edge */}
+        {/* Accent strip on left edge */}
         <div
           className="absolute inset-y-0 left-0 w-[3px]"
           style={{ backgroundColor: card.accent }}
@@ -134,7 +138,7 @@ function AdCard({ card }: { card: AdCard }) {
 
 export default function AdCardGrid() {
   return (
-    <div className="flex flex-col gap-4 p-6">
+    <div className="grid grid-cols-1 md:grid-cols-3 gap-4 p-6 max-w-5xl mx-auto w-full">
       {cards.map((card) => (
         <AdCard key={card.id} card={card} />
       ))}
