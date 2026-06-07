@@ -140,7 +140,7 @@ function AdCard({ card }: { card: AdCard }) {
 
 export default function AdCardGrid() {
   return (
-    <div className="grid grid-cols-1 md:grid-cols-3 gap-4 p-6 max-w-5xl mx-auto w-full">
+    <div className="grid grid-cols-1 md:grid-cols-3 gap-4 p-6 max-w-7xl mx-auto w-full">
       {cards.map((card) => (
         <AdCard key={card.id} card={card} />
       ))}

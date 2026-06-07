@@ -8,9 +8,7 @@ export default function Home() {
 
 
 
-     <PapaJohnsAdCard
-        imageUrl="/feature/images/how_to_wash_towels.jpg"
-      />
+   
 
       <AdCardGrid />
     </div>
