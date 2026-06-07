@@ -1,5 +1,6 @@
 import Image from "next/image";
 import PapaJohnsAdCard from "./components/PapaJohnsAdCard";
+import AdCardGrid from "./components/AdCardGrid";
 
 export default function Home() {
   return (
@@ -10,6 +11,8 @@ export default function Home() {
      <PapaJohnsAdCard
         imageUrl="/feature/images/how_to_wash_towels.jpg"
       />
+
+      <AdCardGrid />
     </div>
   );
 }
