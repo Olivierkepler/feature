@@ -5,7 +5,7 @@ export default function Home() {
   return (
     <div className="flex flex-col ">
     <PapaJohnsAdCard
-        imageUrl="/images/how_to_wash_towels.jpg"  {/* add your pizza image to /public */}
+        imageUrl="/images/how_to_wash_towels.jpg" 
       />
     </div>
   );
