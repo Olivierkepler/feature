@@ -1,5 +1,7 @@
 "use client";
 
+import Image from "next/image";
+
 interface PapaJohnsAdCardProps {
   discount?: string;
   description?: string;
@@ -61,11 +63,15 @@ export default function PapaJohnsAdCard({
 
       {/* Right image panel */}
       <div className="w-[140px] flex-shrink-0">
-        <img
-          src={imageUrl}
-          alt={imageAlt}
-          className="h-full w-full object-cover"
-        />
+        <div className="relative h-full w-full">
+          <Image
+            src={imageUrl}
+            alt={imageAlt}
+            fill
+            className="object-cover"
+            sizes="140px"
+          />
+        </div>
       </div>
     </div>
   );
