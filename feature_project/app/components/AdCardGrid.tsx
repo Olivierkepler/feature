@@ -36,7 +36,7 @@ const cards: AdCard[] = [
     description: "Use code SAVE25 at checkout on any regular menu order today.",
     ctaLabel: "ORDER NOW",
     ctaHref: "#",
-    imageUrl: "/feature/images/limited_deal.jpg",
+    imageUrl: "/feature/images/naturisticstone-kitchen-8941904.png",
     imageAlt: "25% off deal",
     accent: "#CC0000",
   },
