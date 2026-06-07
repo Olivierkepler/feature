@@ -13,8 +13,8 @@ export default function Home() {
         className="mb-6"
       />
 
-    <PapaJohnsAdCard
-        imageUrl="/images/how_to_wash_towels.jpg" 
+     <PapaJohnsAdCard
+        imageUrl="/feature/images/how_to_wash_towels.jpg"
       />
     </div>
   );
