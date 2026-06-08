@@ -72,31 +72,12 @@ function AdCard({ card }: { card: AdCard }) {
       {/* Left content */}
       <div className="flex flex-1 flex-col justify-between p-5">
         {/* Tag */}
-    {/* Tag */}
-{/* Tag */}
-<div className="w-fit">
-  <svg viewBox="0 0 120 40" width="120" height="40">
-    <defs>
-      <path
-        id={`arc-${card.id}`}
-        d="M 10,35 Q 60,5 110,35"
-      />
-    </defs>
-    <text
-      style={{
-        fontFamily: "'Arial Black', 'Helvetica Neue', Arial, sans-serif",
-        fontWeight: 900,
-        fontSize: "13px",
-        fill: card.tagColor,
-        textTransform: "uppercase",
-      }}
-    >
-      <textPath href={`#arc-${card.id}`} startOffset="50%" textAnchor="middle">
-        {card.tag}
-      </textPath>
-    </text>
-  </svg>
-</div>
+        <span
+          className="inline-block w-fit rounded-full px-2.5 py-0.5 text-[14px] font-extrabold uppercase tracking-widest "
+          style={{ color: card.tagColor }}
+        >
+          {card.tag}
+        </span>
 
         {/* Text */}
         <div className="mt-3 space-y-1">
