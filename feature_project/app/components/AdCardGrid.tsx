@@ -73,8 +73,8 @@ function AdCard({ card }: { card: AdCard }) {
       <div className="flex flex-1 flex-col justify-between p-5">
         {/* Tag */}
         <span
-          className="inline-block w-fit rounded-full px-2.5 py-0.5 text-[10px] font-extrabold uppercase tracking-widest text-white"
-          style={{ backgroundColor: card.tagColor }}
+          className="inline-block w-fit rounded-full px-2.5 py-0.5 text-[14px] font-extrabold uppercase tracking-widest "
+          style={{ color: card.tagColor }}
         >
           {card.tag}
         </span>
