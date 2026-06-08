@@ -73,31 +73,29 @@ function AdCard({ card }: { card: AdCard }) {
       <div className="flex flex-1 flex-col justify-between p-5">
         {/* Tag */}
     {/* Tag */}
-<div className="w-fit leading-none">
-  <span
-    className="block text-[13px] font-black uppercase"
-    style={{
-      color: card.tagColor,
-      fontFamily: "'Arial Black', 'Helvetica Neue', Arial, sans-serif",
-      letterSpacing: "-0.01em",
-      lineHeight: "1.1",
-    }}
-  >
-    {card.tag.split(" ")[0]}
-  </span>
-  {card.tag.split(" ")[1] && (
-    <span
-      className="block text-[13px] font-black uppercase"
+{/* Tag */}
+<div className="w-fit">
+  <svg viewBox="0 0 120 40" width="120" height="40">
+    <defs>
+      <path
+        id={`arc-${card.id}`}
+        d="M 10,35 Q 60,5 110,35"
+      />
+    </defs>
+    <text
       style={{
-        color: card.tagColor,
         fontFamily: "'Arial Black', 'Helvetica Neue', Arial, sans-serif",
-        letterSpacing: "-0.01em",
-        lineHeight: "1.1",
+        fontWeight: 900,
+        fontSize: "13px",
+        fill: card.tagColor,
+        textTransform: "uppercase",
       }}
     >
-      {card.tag.split(" ").slice(1).join(" ")}
-    </span>
-  )}
+      <textPath href={`#arc-${card.id}`} startOffset="50%" textAnchor="middle">
+        {card.tag}
+      </textPath>
+    </text>
+  </svg>
 </div>
 
         {/* Text */}
