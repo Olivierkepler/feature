@@ -72,33 +72,32 @@ function AdCard({ card }: { card: AdCard }) {
       {/* Left content */}
       <div className="flex flex-1 flex-col justify-between p-5">
         {/* Tag */}
-       {/* Tag */}
-<div className="relative w-fit">
-  {/* Decorative left bar */}
-  <div
-    className="absolute left-0 top-0 bottom-0 w-[3px] rounded-full"
-    style={{ backgroundColor: card.tagColor }}
-  />
+    {/* Tag */}
+<div className="w-fit leading-none">
   <span
-    className="block pl-3 text-[11px] font-black uppercase tracking-[0.25em]"
+    className="block text-[13px] font-black uppercase"
     style={{
       color: card.tagColor,
-      fontFamily: "'Georgia', serif",
-      letterSpacing: "0.25em",
-      textShadow: `0 0 20px ${card.tagColor}44`,
-      WebkitTextStroke: `0.3px ${card.tagColor}`,
+      fontFamily: "'Arial Black', 'Helvetica Neue', Arial, sans-serif",
+      letterSpacing: "-0.01em",
+      lineHeight: "1.1",
     }}
   >
-    {card.tag}
+    {card.tag.split(" ")[0]}
   </span>
-  {/* Underline accent */}
-  <div
-    className="mt-0.5 h-[1.5px] rounded-full"
-    style={{
-      background: `linear-gradient(to right, ${card.tagColor}, transparent)`,
-      width: "100%",
-    }}
-  />
+  {card.tag.split(" ")[1] && (
+    <span
+      className="block text-[13px] font-black uppercase"
+      style={{
+        color: card.tagColor,
+        fontFamily: "'Arial Black', 'Helvetica Neue', Arial, sans-serif",
+        letterSpacing: "-0.01em",
+        lineHeight: "1.1",
+      }}
+    >
+      {card.tag.split(" ").slice(1).join(" ")}
+    </span>
+  )}
 </div>
 
         {/* Text */}
